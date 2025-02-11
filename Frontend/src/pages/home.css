@@ -1,0 +1,148 @@
+/* Ensure full-page width */
+.homepage {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  text-align: center;
+}
+
+.hero-banner {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Categories Section */
+.categories {
+  padding: 30px 5%;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 180px;
+  text-align: center;
+}
+
+.category-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.category-card p {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Discount Offer Section */
+.discount-banner {
+  text-align: center;
+  background-color: #ff5722;
+  color: white;
+  padding: 20px;
+  margin: 20px 0;
+  width: 90%;
+  border-radius: 8px;
+}
+
+.discount-banner h2 {
+  font-size: 1.8rem;
+}
+
+.discount-banner p {
+  font-size: 1.2rem;
+}
+
+.shop-now-btn {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.shop-now-btn:hover {
+  background-color: #555;
+}
+
+/* Featured Products */
+.featured-products {
+  padding: 40px 5%;
+  text-align: center;
+  width: 100%;
+}
+
+.featured-products h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-banner {
+    max-height: 250px;
+  }
+
+  .category-card {
+    width: 150px;
+  }
+
+  .shop-now-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .featured-products {
+    padding: 30px 10px;
+  }
+}
