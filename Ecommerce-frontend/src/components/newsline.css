@@ -1,0 +1,22 @@
+.news-line {
+  background: #555554;
+  color: white;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1100;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .news-line {
+    font-size: 0.9rem;
+    padding: 0.3rem 1rem;
+  }
+}
