@@ -1,19 +1,19 @@
-/* Navbar container */
 .navbar {
   background: white;
   color: rgb(78, 78, 78);
   padding: 1rem 2rem;
   position: fixed;
-  top: 40px; /* Adjust top space */
+  top: 40px; /* Push below the news line */
   left: 0;
   width: 100%;
   z-index: 1000;
   display: flex;
   justify-content: center;
-  align-items: center; /* Adjust shadow for top placement */
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Flex container for logo and navigation */
+/* Flex container for navbar content */
 .container {
   width: 100%;
   max-width: 1300px;
@@ -22,16 +22,17 @@
   justify-content: space-between;
 }
 
-/* Logo styling */
+/* Logo (Aligned Left) */
 .logo {
   font-size: 1.8rem;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   cursor: pointer;
+  text-align: left;
   flex-shrink: 0;
 }
 
-/* Menu button for mobile */
+/* Mobile Menu Toggle Button */
 .menu-toggle {
   display: none;
   background: none;
@@ -41,7 +42,7 @@
   cursor: pointer;
 }
 
-/* Centered navigation */
+/* Navigation Links */
 .nav-links {
   display: flex;
   justify-content: center;
@@ -53,9 +54,10 @@
   display: flex;
   gap: 2rem;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* Navigation links */
 .nav-links li {
   font-family: "Poppins";
   font-weight: 300;
@@ -73,7 +75,7 @@
   color: #f0a500;
 }
 
-/* Mobile responsiveness */
+/* Responsive Navbar (Mobile View) */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -101,8 +103,8 @@
   }
 }
 
-/* Push content down to prevent overlap */
+/* Push Content Down (Prevent Overlapping) */
 .content {
-  margin-top: 120px; /* Adjust top margin to create space for the navbar */
+  margin-top: 120px; /* Adjust top margin for navbar */
   padding: 20px;
 }

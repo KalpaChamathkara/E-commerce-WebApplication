@@ -8,18 +8,14 @@ import ProductCard from "/src/components/ProductCard.jsx";
 const HomePage = () => {
   // Dummy product categories
   const categories = [
-    {
-      id: 1,
-      name: "Mobiles & Tablets",
-      imageUrl: "/images/category-mobile.jpg",
-    },
-    {
-      id: 2,
-      name: "Laptops & Accessories",
-      imageUrl: "/images/category-laptop.jpg",
-    },
-    { id: 3, name: "Smart Watches", imageUrl: "/images/category-watch.jpg" },
-    { id: 4, name: "Audio Devices", imageUrl: "/images/category-audio.jpg" },
+    "Consumer Electronics",
+    "Home & Kitchen",
+    "Fashion & Apparel",
+    "Machinery & Tools",
+    "Health & Beauty",
+    "Automobiles & Accessories",
+    "Sports & Outdoor",
+    "Toys & Hobbies",
   ];
 
   // Dummy product data
@@ -50,33 +46,48 @@ const HomePage = () => {
       {/* Navbar */}
       <Navbar />
 
-      {/* Hero Section */}
-      <section className="hero-section">
-        <img
-          src="/images/hero-banner.jpg"
-          alt="Electronics Sale"
-          className="hero-banner"
-        />
+      {/* Hero Section with Categories Sidebar */}
+      <section className="hero-container">
+        {/* Sidebar Categories */}
+        <div className="category-sidebar">
+          <ul>
+            {categories.map((category, index) => (
+              <li key={index}>{category}</li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Hero Banner with Search */}
+        <div className="hero-banner">
+          <img src="/images/alibaba-banner.jpg" alt="Alibaba Deals" />
+          <div className="search-bar">
+            <input
+              type="text"
+              placeholder="Search for products, suppliers..."
+            />
+            <button>Search</button>
+          </div>
+        </div>
       </section>
 
-      {/* Category Section */}
-      <section className="categories">
-        <h2>Shop by Category</h2>
-        <div className="category-list">
-          {categories.map((category) => (
-            <div key={category.id} className="category-card">
-              <img src={category.imageUrl} alt={category.name} />
-              <p>{category.name}</p>
-            </div>
+      {/* Best Selling Section */}
+      <section className="best-selling">
+        <h2> Best Selling Items</h2>
+        <div className="product-list">
+          {products.map((product) => (
+            <ProductCard key={product.id} product={product} />
           ))}
         </div>
       </section>
 
-      {/* Discount Offer Section */}
-      <section className="discount-banner">
-        <h2>🔥 Flash Sale - Up to 50% Off!</h2>
-        <p>Hurry, limited time offer!</p>
-        <button className="shop-now-btn">Shop Now</button>
+      {/* Trending Deals Section */}
+      <section className="trending-deals">
+        <h2> Trending Deals</h2>
+        <div className="product-list">
+          {products.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
       </section>
 
       {/* Featured Products Section */}
