@@ -7,7 +7,6 @@ function Navbar() {
 
   return (
     <header className="navbar">
-      <link href="/src/styles.css" rel="stylesheet"></link>
       <div className="container">
         <h1 className="logo">ElectroShop</h1>
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
@@ -30,8 +29,6 @@ function Navbar() {
                 Cart
               </Link>
             </li>
-          </ul>
-          <ul className="nav-right">
             <li>
               <Link to="/signup">Sign Up</Link>
             </li>
