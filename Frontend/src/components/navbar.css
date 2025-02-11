@@ -1,9 +1,11 @@
+@import "tailwindcss";
+
 .navbar {
   background: white;
   color: rgb(78, 78, 78);
   padding: 1rem 2rem;
   position: fixed;
-  top: 40px;
+  top: 50px;
   left: 0;
   width: 100%;
   z-index: 1000;
