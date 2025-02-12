@@ -22,26 +22,26 @@ const HomePage = () => {
   const products = [
     {
       id: 1,
-      name: "Smartphone",
+      name: "Google Pixel Phone",
       price: 399,
       imageUrl: "https://mofo.lk/wp-content/uploads/2023/06/5.webp",
     },
     {
       id: 2,
-      name: "Laptop",
+      name: "Acer Laptop",
       price: 899,
       imageUrl:
         "https://buyabans.com/storage/product/5578/acpcli58gb1tb12g_2_1.jpg",
     },
     {
       id: 3,
-      name: "Headphones",
+      name: "JBL Headphones",
       price: 150,
       imageUrl: "https://buyabans.com/storage/product/4867/7002018_2_262.jpg",
     },
     {
       id: 4,
-      name: "Smartwatch",
+      name: "Samsung Smartwatch",
       price: 199,
       imageUrl: "https://buyabans.com/storage/product/8703/rmwatchbsbk_3.jpg",
     },
