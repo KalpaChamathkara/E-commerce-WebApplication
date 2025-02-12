@@ -20,94 +20,119 @@ const ProductsPage = () => {
   const allProducts = [
     {
       id: 1,
-      name: "Smartphone",
-      category: "Consumer Electronics",
+      name: "Google Pixel Phone",
+      category: "Automobiles & Accessories",
       price: 399,
-      imageUrl: "/images/smartphone.jpg",
+      imageUrl: "https://mofo.lk/wp-content/uploads/2023/06/5.webp",
     },
     {
       id: 2,
-      name: "Laptop",
-      category: "Consumer Electronics",
+      name: "Acer Laptop",
+      category: "Automobiles & Accessories",
       price: 899,
-      imageUrl: "/images/laptop.jpg",
+      imageUrl:
+        "https://buyabans.com/storage/product/5578/acpcli58gb1tb12g_2_1.jpg",
     },
     {
       id: 3,
-      name: "Headphones",
-      category: "Consumer Electronics",
+      name: "JBL Headphones",
+      category: "Automobiles & Accessories",
       price: 150,
-      imageUrl: "/images/headphones.jpg",
+      imageUrl: "https://buyabans.com/storage/product/4867/7002018_2_262.jpg",
     },
     {
       id: 4,
-      name: "Smartwatch",
-      category: "Consumer Electronics",
+      name: "Samsung Smartwatch",
+      category: "Automobiles & Accessories",
       price: 199,
-      imageUrl: "/images/smartwatch.jpg",
+      imageUrl: "https://buyabans.com/storage/product/8703/rmwatchbsbk_3.jpg",
     },
     {
       id: 5,
-      name: "Blender",
+      name: "Olsenmark Blender and Grinder",
       category: "Home & Kitchen",
       price: 79,
-      imageUrl: "/images/blender.jpg",
+      imageUrl: "https://buyabans.com/storage/product/10242/aklo_paoject.png",
     },
     {
       id: 6,
-      name: "Coffee Maker",
+      name: "Black & Decker 330W One Cup Coffee Maker (Black)",
       category: "Home & Kitchen",
       price: 120,
-      imageUrl: "/images/coffeemaker.jpg",
+      imageUrl:
+        "https://buyabans.com/storage/product/5621/lpbdcmdcm25nb5_1.jpg",
     },
     {
       id: 7,
-      name: "Running Shoes",
+      name: "Men's Chic Casual Sneakers",
       category: "Fashion & Apparel",
       price: 90,
-      imageUrl: "/images/shoes.jpg",
+      imageUrl:
+        "https://coolplanet.lk/cdn/shop/files/Web_0004_Layer35.jpg?v=1738051910&width=130",
     },
     {
       id: 8,
-      name: "Jacket",
+      name: "Women's Chic Casual Sneakers",
       category: "Fashion & Apparel",
       price: 110,
-      imageUrl: "/images/jacket.jpg",
+      imageUrl:
+        "https://coolplanet.lk/cdn/shop/files/Web_0016_Layer23.jpg?v=1738051465&width=130",
     },
     {
       id: 9,
       name: "Garner Bright Complete Moisturizing Serum in Lotion 400ml",
       category: "Health & Beauty",
       price: 120,
-      imageUrl: "/images/coffeemaker.jpg",
+      imageUrl:
+        "https://www.essentials.lk/cdn/shop/products/GarnierBrightCompleteMoisturizingSeruminLotion400ml.jpg?crop=center&height=600&v=1669715649&width=600",
     },
     {
       id: 10,
       name: "Medicare Collagen Jelly Cream 50ml",
       category: "Health & Beauty",
       price: 90,
-      imageUrl: "/images/shoes.jpg",
+      imageUrl:
+        "https://www.essentials.lk/cdn/shop/files/MedicubeCollagenJellyCream50ml.jpg?crop=center&height=1000&v=1737189349&width=1000",
     },
     {
       id: 11,
-      name: "Neurogenic Oil-Free Pink Grapefruit Acne Moisturizer 118ml",
+      name: "Maestro Melody Eau De Perfume For Women 100ml",
       category: "Health & Beauty",
       price: 110,
-      imageUrl: "/images/jacket.jpg",
+      imageUrl:
+        "https://www.essentials.lk/cdn/shop/files/MaestroMelodyEauDePerfumeForWomen100ml.jpg?crop=center&height=1000&v=1725601382&width=1000",
     },
     {
       id: 10,
-      name: "Knife Set",
+      name: "Xiaomi HuoHou Incom Stainless Steel 6pcs Knife Set",
       category: "Home & Kitchen",
       price: 90,
-      imageUrl: "/images/shoes.jpg",
+      imageUrl:
+        "https://buyabans.com/storage/product/10101/new_kalo_apoject.png",
     },
     {
       id: 11,
-      name: "Singer Refrigerator",
+      name: "Samsung Refrigerator",
       category: "Home & Kitchen",
       price: 110,
-      imageUrl: "/images/jacket.jpg",
+      imageUrl:
+        "https://singerwebcdn.azureedge.net/resources/products/normal/SMGRT41DG6A2BS8IG-01.webp",
+    },
+    {
+      id: 12,
+      name: "Toyota FJ Cruiser Diecast Toy Car ",
+      category: "Toys & Hobbies",
+      price: 110,
+      imageUrl:
+        "https://coolplanet.lk/cdn/shop/files/0020_DSC08326.jpg?v=1738744005&width=130",
+    },
+    {
+      id: 13,
+      name: "Zinc Alloy Diecast Toy ",
+      category: "Toys & Hobbies",
+      price: 110,
+      imageUrl:
+        "https://coolplanet.lk/cdn/shop/files/0017_DSC08331.jpg?v=1738740844&width=130",
     },
   ];
 

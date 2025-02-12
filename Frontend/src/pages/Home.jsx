@@ -24,20 +24,26 @@ const HomePage = () => {
       id: 1,
       name: "Smartphone",
       price: 399,
-      imageUrl: "/images/smartphone.jpg",
+      imageUrl: "https://mofo.lk/wp-content/uploads/2023/06/5.webp",
     },
-    { id: 2, name: "Laptop", price: 899, imageUrl: "/images/laptop.jpg" },
+    {
+      id: 2,
+      name: "Laptop",
+      price: 899,
+      imageUrl:
+        "https://buyabans.com/storage/product/5578/acpcli58gb1tb12g_2_1.jpg",
+    },
     {
       id: 3,
       name: "Headphones",
       price: 150,
-      imageUrl: "/images/headphones.jpg",
+      imageUrl: "https://buyabans.com/storage/product/4867/7002018_2_262.jpg",
     },
     {
       id: 4,
       name: "Smartwatch",
       price: 199,
-      imageUrl: "/images/smartwatch.jpg",
+      imageUrl: "https://buyabans.com/storage/product/8703/rmwatchbsbk_3.jpg",
     },
   ];
 
@@ -59,7 +65,10 @@ const HomePage = () => {
 
         {/* Hero Banner with Search */}
         <div className="hero-banner">
-          <img src="/images/alibaba-banner.jpg" alt="Alibaba Deals" />
+          <img
+            src="https://img.freepik.com/free-photo/shopping-concept-close-up-portrait-young-beautiful-attractive-redhair-girl-smiling-looking-camera_1258-118763.jpg?t=st=1739367501~exp=1739371101~hmac=7c0daa95730d6cf427f337a875aa4824cde34b7595b5c0b4e49c8e794c536b35&w=1380"
+            alt="Alibaba Deals"
+          />
           <div className="search-bar">
             <input
               type="text"
