@@ -59,7 +59,7 @@ const HomePage = () => {
 
         {/* Hero Banner with Search */}
         <div className="hero-banner">
-          <img src="/images/alibaba-banner.jpg" alt="Electroshop Deals" />
+          <img src="/images/alibaba-banner.jpg" alt="Alibaba Deals" />
           <div className="search-bar">
             <input
               type="text"
