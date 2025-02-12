@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./NewsLine.css";
+import "./css/NewsLine.css";
 
 function NewsLine() {
   return (
