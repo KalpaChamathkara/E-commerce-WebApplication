@@ -1,0 +1,159 @@
+/* Full Page Layout */
+.signup-page {
+  display: flex;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+}
+
+/* Left Side - Full Page Image */
+.signup-image {
+  width: 50%;
+  height: auto;
+  padding-top: 10px;
+  /* background: url("/images/signup-bg.jpg") no-repeat center center/cover; */
+}
+
+/* Right Side - Full Page Form */
+.signup-form {
+  font-family: "Poppins";
+  width: auto;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+}
+
+.signup-form h2 {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 190px;
+  margin-bottom: 10px;
+}
+
+.signup-form p {
+  color: #666;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+/* Form Styling */
+.form-group {
+  width: 100%;
+  max-width: 500px;
+  margin-left: 180px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus {
+  border: 1px solid #007bff;
+  outline: none;
+}
+
+/* Password Input with Toggle */
+.password-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.password-input input {
+  border: none;
+  flex: 1;
+  padding: 0;
+}
+
+.password-input input:focus {
+  outline: none;
+}
+
+.toggle-password {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 10px;
+  color: #666;
+}
+
+/* Signup Button */
+.signup-btn {
+  width: 100%;
+  margin-left: 225px;
+  max-width: 400px;
+  margin-top: 20px;
+  padding: 15px;
+  background: #e65c00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.signup-btn:hover {
+  background: coral;
+}
+
+/* Login Link */
+.login-link {
+  font-family: "Poppins";
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.login-link a {
+  color: #e65c00;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  font-weight: 600;
+  text-decoration: underline;
+  color: coral;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-page {
+    flex-direction: column;
+  }
+
+  .signup-image {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .signup-form {
+    width: 100%;
+    padding: 30px;
+  }
+}
