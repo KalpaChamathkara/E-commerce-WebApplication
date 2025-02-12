@@ -74,6 +74,41 @@ const ProductsPage = () => {
       price: 110,
       imageUrl: "/images/jacket.jpg",
     },
+    {
+      id: 9,
+      name: "Garner Bright Complete Moisturizing Serum in Lotion 400ml",
+      category: "Health & Beauty",
+      price: 120,
+      imageUrl: "/images/coffeemaker.jpg",
+    },
+    {
+      id: 10,
+      name: "Medicare Collagen Jelly Cream 50ml",
+      category: "Health & Beauty",
+      price: 90,
+      imageUrl: "/images/shoes.jpg",
+    },
+    {
+      id: 11,
+      name: "Neurogenic Oil-Free Pink Grapefruit Acne Moisturizer 118ml",
+      category: "Health & Beauty",
+      price: 110,
+      imageUrl: "/images/jacket.jpg",
+    },
+    {
+      id: 10,
+      name: "Knife Set",
+      category: "Home & Kitchen",
+      price: 90,
+      imageUrl: "/images/shoes.jpg",
+    },
+    {
+      id: 11,
+      name: "Singer Refrigerator",
+      category: "Home & Kitchen",
+      price: 110,
+      imageUrl: "/images/jacket.jpg",
+    },
   ];
 
   const [selectedCategory, setSelectedCategory] = useState("All");
