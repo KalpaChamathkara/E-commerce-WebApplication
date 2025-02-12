@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes } from "react-router-dom";
-import "./home.css"; // Importing CSS for styling
+import "./css/home.css"; // Importing CSS for styling
 import Navbar from "/src/components/Navbar.jsx";
 import Footer from "/src/components/Footer.jsx";
 import ProductCard from "/src/components/ProductCard.jsx";
