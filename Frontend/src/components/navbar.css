@@ -60,7 +60,7 @@
 
 .nav-links li {
   font-family: "Poppins";
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .nav-links a {
@@ -72,7 +72,21 @@
 }
 
 .nav-links a:hover {
-  color: #f0a500;
+  color: #e65c00;
+}
+
+.nav-center .signup a {
+  margin: 5px;
+  padding: 10px 25px 10px 25px;
+  border-radius: 25px;
+  color: white;
+  background-color: #e65c00;
+}
+
+.nav-center .signup a:hover {
+  color: white;
+  background-color: coral;
+  transition: background 0.3s;
 }
 
 /* Responsive Navbar (Mobile View) */
