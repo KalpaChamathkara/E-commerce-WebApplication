@@ -1,3 +1,4 @@
+/* Navbar */
 .navbar {
   background: white;
   color: rgb(78, 78, 78);
@@ -11,6 +12,8 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Initially hidden */
+  animation: fadeInDown 0.5s ease-out forwards; /* Animation for navbar */
 }
 
 /* Flex container for navbar content */
@@ -40,6 +43,11 @@
   font-size: 1.8rem;
   color: rgb(78, 78, 78);
   cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu-toggle:hover {
+  color: #e65c00;
 }
 
 /* Navigation Links */
@@ -48,6 +56,8 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  opacity: 0; /* Initially hidden */
+  animation: fadeInUp 0.5s ease-out 0.3s forwards; /* Animation for links */
 }
 
 .nav-center {
@@ -105,10 +115,14 @@
     flex-direction: column;
     text-align: center;
     padding: 1rem 0;
+    opacity: 0; /* Initially hidden for animation */
+    animation: fadeInDown 0.5s ease-out 0.5s forwards; /* Animation for mobile menu */
   }
 
   .nav-links.open {
     display: flex;
+    opacity: 1;
+    animation: fadeInDown 0.5s ease-out forwards;
   }
 
   .nav-center {
@@ -121,4 +135,27 @@
 .content {
   margin-top: 120px; /* Adjust top margin for navbar */
   padding: 20px;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInDown {
+  0% {
+    transform: translateY(-30px); /* Start from above */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* Final position */
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(30px); /* Start from below */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* Final position */
+    opacity: 1;
+  }
 }
