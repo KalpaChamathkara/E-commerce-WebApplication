@@ -80,7 +80,7 @@ const ProductsPage = () => {
     },
     {
       id: 9,
-      name: "Garner Bright Complete Moisturizing Serum in Lotion 400ml",
+      name: "Garner Bright Complete Moisturizing Serum",
       category: "Health & Beauty",
       price: 120,
       imageUrl:
@@ -88,7 +88,7 @@ const ProductsPage = () => {
     },
     {
       id: 10,
-      name: "Medicare Collagen Jelly Cream 50ml",
+      name: "Medicare Collagen Jelly Cream",
       category: "Health & Beauty",
       price: 90,
       imageUrl:
@@ -96,14 +96,14 @@ const ProductsPage = () => {
     },
     {
       id: 11,
-      name: "Maestro Melody Eau De Perfume For Women 100ml",
+      name: "Maestro Melody Eau De Perfume",
       category: "Health & Beauty",
       price: 110,
       imageUrl:
         "https://www.essentials.lk/cdn/shop/files/MaestroMelodyEauDePerfumeForWomen100ml.jpg?crop=center&height=1000&v=1725601382&width=1000",
     },
     {
-      id: 10,
+      id: 12,
       name: "Xiaomi HuoHou Incom Stainless Steel 6pcs Knife Set",
       category: "Home & Kitchen",
       price: 90,
@@ -111,7 +111,7 @@ const ProductsPage = () => {
         "https://buyabans.com/storage/product/10101/new_kalo_apoject.png",
     },
     {
-      id: 11,
+      id: 13,
       name: "Samsung Refrigerator",
       category: "Home & Kitchen",
       price: 110,
@@ -119,7 +119,7 @@ const ProductsPage = () => {
         "https://singerwebcdn.azureedge.net/resources/products/normal/SMGRT41DG6A2BS8IG-01.webp",
     },
     {
-      id: 12,
+      id: 14,
       name: "Toyota FJ Cruiser Diecast Toy Car ",
       category: "Toys & Hobbies",
       price: 110,
@@ -127,7 +127,7 @@ const ProductsPage = () => {
         "https://coolplanet.lk/cdn/shop/files/0020_DSC08326.jpg?v=1738744005&width=130",
     },
     {
-      id: 13,
+      id: 15,
       name: "Zinc Alloy Diecast Toy ",
       category: "Toys & Hobbies",
       price: 110,
