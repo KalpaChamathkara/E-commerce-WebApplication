@@ -4,7 +4,7 @@
   padding: 20px 0;
   display: block;
   align-items: center;
-  font-family: "Poppins", "Helvetica Neue";
+  font-family: "Poppins";
 }
 
 .footer-container {
@@ -23,5 +23,5 @@
 }
 
 .social-links a:hover {
-  color: #ffcc00;
+  color: coral;
 }
