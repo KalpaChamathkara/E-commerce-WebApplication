@@ -10,7 +10,7 @@ function Navbar() {
       <header className="navbar">
         <div className="container">
           {/* Logo on the Left */}
-          <h1 className="logo">ElectroShop</h1>
+          <h1 className="logo">VibeMarket</h1>
 
           {/* Mobile Menu Toggle */}
           <button

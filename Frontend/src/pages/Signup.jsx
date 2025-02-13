@@ -47,11 +47,11 @@ const SignupPage = () => {
 
       {/* Right Side - Signup Form */}
       <div className="signup-form">
-        <h2>Create an Account</h2>
-        <p>Join ElectroShop and start shopping today!</p>
+        <h2>CREATE AN ACCOUNT</h2>
+        <p>Join VibeMarket and start shopping today!</p>
 
         <form onSubmit={handleSubmit}>
-          <div className="form-group">
+          <div className="form-groupsignup">
             <label>Full Name</label>
             <input
               type="text"
@@ -66,7 +66,7 @@ const SignupPage = () => {
             )}
           </div>
 
-          <div className="form-group">
+          <div className="form-groupsignup">
             <label>Email</label>
             <input
               type="email"
@@ -81,12 +81,12 @@ const SignupPage = () => {
             )}
           </div>
 
-          <div className="form-group">
+          <div className="form-groupsignup">
             <label>Phone Number</label>
             <input
-              type="tel" // ✅ Fixed: Correct input type
+              type="tel" //
               placeholder="Enter your Phone Number"
-              value={formData.telephoneNumber} // ✅ Fixed: Correct state variable
+              value={formData.telephoneNumber} //
               onChange={(e) =>
                 setFormData({ ...formData, telephoneNumber: e.target.value })
               }
@@ -96,7 +96,7 @@ const SignupPage = () => {
             )}
           </div>
 
-          <div className="form-group">
+          <div className="form-groupsignup">
             <label>Password</label>
             <div className="password-input">
               <input

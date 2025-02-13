@@ -1,45 +1,40 @@
-/* Full Page Layout */
-.signup-page {
+/* General Page Styling */
+.signin-page {
   display: flex;
   height: auto;
-  width: 100%;
+  width: auto;
   overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  animation: fadeIn 1s ease-in-out;
 }
 
-/* Left Side - Full Page Image */
-.signup-image {
+/* Right Side - Image */
+.signin-image {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeInLeft 1s ease-in-out;
+  animation: fadeInRight 1s ease-in-out;
 }
 
-.signup-image img {
+.signin-image img {
   width: 50%;
   width: 900px;
   height: auto;
   border-radius: 10px;
 }
 
-/* Right Side - Full Page Form */
-.signup-form {
+/* Left Side - Sign In Form */
+.signin-form {
   font-family: "Poppins", sans-serif;
   flex: 1;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(255, 255, 255);
+  background: #fff;
   padding: 50px;
-  animation: fadeInRight 1s ease-in-out;
+  animation: fadeInLeft 1s ease-in-out;
 }
 
-/* Title Animations */
-.signup-form h2 {
+/* Title Animation */
+.signin-form h2 {
   font-size: 50px;
   font-weight: 500;
   text-align: center;
@@ -48,7 +43,7 @@
   animation: fadeInUp 1s ease-in-out forwards;
 }
 
-.signup-form p {
+.signin-form p {
   color: #666;
   text-align: center;
   font-size: 16px;
@@ -57,17 +52,17 @@
   animation: fadeInUp 1.2s ease-in-out forwards;
 }
 
-/* Form Styling */
-.form-groupsignup {
+/* Form Group */
+.form-groupSignin {
   width: 100%;
   max-width: 500px;
-  margin-right: 180px;
+  margin-left: 180px;
   margin-bottom: 15px;
   opacity: 0;
   animation: fadeInUp 1.4s ease-in-out forwards;
 }
 
-.form-groupsignup label {
+.form-groupSignin label {
   font-size: 20px;
   font-weight: bold;
   display: block;
@@ -75,7 +70,7 @@
 }
 
 /* Input Fields */
-.form-groupsignup input {
+.form-groupSignin input {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -85,13 +80,13 @@
 }
 
 /* Input Focus Effect */
-.form-groupsignup input:focus {
+.form-groupSignin input:focus {
   border: 1px solid #007bff;
   outline: none;
   box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.3);
 }
 
-/* Password Input with Toggle */
+/* Password Input */
 .password-input {
   display: flex;
   align-items: center;
@@ -114,6 +109,8 @@
 
 /* Eye Icon */
 .toggle-password {
+  position: absolute;
+  right: 10px;
   background: none;
   border: none;
   cursor: pointer;
@@ -126,10 +123,19 @@
   color: #e65c00;
 }
 
-/* Signup Button */
-.signup-btn {
+/* Error Messages */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Sign-in Button */
+.signin-btn {
   width: 100%;
+  margin-left: 225px;
   max-width: 400px;
+  margin-top: 10px;
   padding: 15px;
   background: #e65c00;
   color: white;
@@ -140,13 +146,13 @@
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.signup-btn:hover {
+.signin-btn:hover {
   background: coral;
   transform: scale(1.05);
 }
 
-/* Login Link */
-.login-link {
+/* Sign-up Link */
+.signup-link {
   font-family: "Poppins";
   display: block;
   text-align: center;
@@ -157,51 +163,111 @@
   animation: fadeInUp 1.6s ease-in-out forwards;
 }
 
-.login-link a {
+.signup-link a {
   color: #e65c00;
   font-weight: 400;
   text-decoration: none;
 }
 
-.login-link a:hover {
+.signup-link a:hover {
   font-weight: 600;
   text-decoration: underline;
   color: coral;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
-  .signup-page {
+  .signin-page {
     flex-direction: column;
+    align-items: center;
     height: auto;
-  }
-
-  .signup-image {
-    width: 100%;
     padding: 20px;
   }
 
-  .signup-form {
+  .signin-image {
     width: 100%;
-    padding: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .signin-image img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .signin-form {
+    width: 100%;
+    padding: 20px;
     text-align: center;
   }
 
-  .signup-btn {
-    width: 100%;
+  .signin-form h2 {
+    font-size: 40px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .signin-form p {
+    font-size: 14px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto 15px;
+  }
+
+  .signin-btn {
+    max-width: 90%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .signin-image img {
+    max-width: 70%;
+  }
+
+  .signin-form h2 {
+    font-size: 32px;
+  }
+
+  .signin-form p {
+    font-size: 14px;
+  }
+
+  .signin-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signin-form {
+    padding: 15px;
+  }
+
+  .signin-form h2 {
+    font-size: 28px;
+  }
+
+  .signin-form p {
+    font-size: 13px;
+  }
+
+  .signin-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .signin-image img {
+    max-width: 60%;
   }
 }
 
 /* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes fadeInLeft {
   from {
     opacity: 0;
