@@ -1,0 +1,31 @@
+.sponsors {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .sponsors h3{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .sponsor-logos {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+ 
+  .sponsor-logos img {
+    max-width: 150px;
+    height: 100px;
+    transition: transform 0.3s;
+  }
+  
+  .sponsor-logos img:hover {
+    transform: scale(1.1);
+  }
+  

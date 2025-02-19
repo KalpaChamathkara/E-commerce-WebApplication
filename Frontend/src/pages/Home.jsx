@@ -2,6 +2,7 @@ import React from "react";
 import { Routes } from "react-router-dom";
 import "./css/home.css"; // Importing CSS for styling
 import Navbar from "/src/components/Navbar.jsx";
+import Sponsor from "/src/components/sponsor.jsx";
 import Footer from "/src/components/Footer.jsx";
 import ProductCard from "/src/components/ProductCard.jsx";
 
@@ -108,6 +109,9 @@ const HomePage = () => {
           ))}
         </div>
       </section>
+
+      {/* Sponsor */}
+      <Sponsor /> 
 
       {/* Footer */}
       <Footer />
