@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { FaBars } from "react-icons/fa";
 import "./css/Navbar.css";
 
 function Navbar() {
@@ -14,35 +15,35 @@ function Navbar() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="menu-toggle"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            ☰
-          </button>
+          className="menu-toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <FaBars size={24} />
+        </button>
 
           {/* Navigation Links */}
           <nav className={menuOpen ? "nav-links open" : "nav-links"}>
             <ul className="nav-center">
               <li>
                 <Link to="/" onClick={() => setMenuOpen(false)}>
-                  Home
+                 Home
                 </Link>
               </li>
               <li>
                 <Link to="/products" onClick={() => setMenuOpen(false)}>
-                  Products
+                 Products
                 </Link>
               </li>
               <li>
                 <Link to="/cart" onClick={() => setMenuOpen(false)}>
-                  Cart
+                 Cart
                 </Link>
               </li>
               <li>
-                <Link to="/signin">Sign In</Link>
+                <Link to="/signin"> Sign In</Link>
               </li>
               <li className="signup">
-                <Link to="/signup">Sign Up</Link>
+                <Link to="/signup"> Sign Up</Link>
               </li>
             </ul>
           </nav>
